@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  padding-top: 125px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #faf9f7;
+  color: #151110;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .navbar-nav {
+  font-family: "Gill Sans", sans-serif;
+  font-size: medium;
+  justify-content: flex-end;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar-brand {
+  margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.header .nav-item {
+  margin-right: 20px;
+  font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .nav-link{
+  color: #3b625f !important;
+}
+
+.body {
+  background-color: #faf9f7;
+}
+
+.contact-bar {
+  position:fixed;
+  bottom: 180px;
+}
+
+.contact-bar.left {
+  left: 42px;
+}
+
+.contact-bar.right {
+  right: 42px;
+}
+
+.contact-bar ul {
+  list-style: none;
+}
+
+.contact-bar ul li {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.contact-bar a {
+  color: #3b625f !important;
+  position: relative;
+}
+
+.contact-bar a:hover {
+  color: #D98F89;
+}
+
+.verticle-bar {
+  position: relative;
+}
+
+.verticle-bar::after {
+  content: ' ';
+  height: 180px;
+  display: block;
+  position: absolute;
+  border-left: 1px solid #3b625f;
+  top: -5px;
+  left: 50%;
+}
+
+.email-bar a {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+.intro-text {
+  margin-top: 150px;
+  margin-left: 20px;
+  line-height: 2.5;
+}
+
+#about-me {
+  margin-left: 200px;
+  margin-top: 300px;
 }
